@@ -14,12 +14,16 @@
     margin:0;
     padding:0;
 }
+
         .container{
-            margin: 0%;
+            
+            position: absolute;
+            top: 8%;
+            left: 16%;
             padding: 1%;
             box-sizing: border-box;
-            height: 100%;
-            width: 100%;
+            height: 90%;
+            width: 83%;
         }
         .container1{
             background-color: aliceblue;
@@ -67,6 +71,14 @@
        float: LEFT;
        font-size: larger;
     }
+    .container4{
+        background-color: aliceblue;
+            margin-top: 1%;
+            width: 60%;
+            height: 49%;
+            padding: 0.1% 2% 0% 2%;
+            border-radius: 5px;
+    }
     .container3{
         margin-top: 1%;
         width: 32%;
@@ -84,7 +96,7 @@
     .container3-2 {
         padding: 2% 4%;
         margin-top: 5%;
-        height: 42%;
+        height: 47%;
         background-color: aliceblue;
     }
     #score{
@@ -99,7 +111,43 @@
     margin-left: 33%;
     -webkit-border-radius: 80px;
     -moz-border-radius: 80px;
-    border-radius: 80px;
+    border-radius: 80px;}
+
+    .navbar{
+    margin-left: 1%;
+    position: absolute;
+    top: 8%;
+    height: 90%;
+    width: 14%;
+    box-sizing: border-box;
+    padding: 3% 2% 0% 2%;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px ;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: rgb(216, 238, 239);
+    border-radius:2px;
 }
 
 .donut-inner {
@@ -124,6 +172,13 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <ul>
+            <li><a href="">Dashboard</a></li>
+            <li><a class="active" href="#">Skill Test</a></li>
+            <li><a href="">Internships</a></li>
+        </ul>
+    </div>
     <div class="container">
 
         <h3>Skill Test</h3>
@@ -141,6 +196,10 @@
             <a class="text"><strong>12,890</strong><br>YOUR RANK</a>
             <a class="text"><strong>37%</strong><br>PERCENTILE</a>
             <a class="text"><strong>07/15</strong><br>CORRECT ANSWERS</a>
+        </div>
+
+        <div class="container4">
+            <h4>Comparision Graph</h4>
         </div>
 
         <div class="container3">

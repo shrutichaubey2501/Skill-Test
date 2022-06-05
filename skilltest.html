@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skilltest</title>
+
+    <style>
+    html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+        .container{
+            margin: 0%;
+            padding: 1%;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+        .container1{
+            background-color: aliceblue;
+            width: 60%;
+            height: 16%;
+            padding: 3% 2% 0% 2%;
+            border-radius: 5px;
+        }
+        .container2{
+            background-color: aliceblue;
+            margin-top: 1%;
+            width: 60%;
+            height: 18%;
+            padding: 0.1% 2% 0% 2%;
+            border-radius: 5px;
+        }
+        .container1 .text{
+            text-align: center;
+            margin-left: 5%;
+        }
+        #htmlimg{
+            position: relative;
+           height:60%;
+           vertical-align: middle;
+           float: left;
+        }
+        .button {
+        height: 40%;
+        width: 20%;
+        border: none;
+        color: white;
+        padding: 2% 5%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 100%;
+        cursor: pointer;
+        background-color: #140663;
+        border-radius: 5px;
+        float: right;
+        vertical-align: middle;
+    }
+    .container2 .text{
+       padding-right: 10%;
+       text-align: center;
+       float: LEFT;
+       font-size: larger;
+    }
+    .container3{
+        margin-top: 1%;
+        width: 32%;
+        height: 85%;
+        border-radius: 5px;
+        position: absolute;
+        top: 8%;
+        left: 66%;
+    }
+    .container3-1 {
+        padding: 2% 4%;
+        height: 50%;
+        background-color: aliceblue;
+    }
+    .container3-2 {
+        padding: 2% 4%;
+        margin-top: 5%;
+        height: 42%;
+        background-color: aliceblue;
+    }
+    #score{
+        position:fixed;
+        top:60%;
+        right: 5%;
+        color: blue;
+    }
+    .donut-container {
+    width: 150px;
+    height: 150px;
+    margin-left: 33%;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+}
+
+.donut-inner {
+    width: 134px;
+    height: 134px;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    background: #FFF;
+    -webkit-border-radius: 65px;
+    -moz-border-radius: 65px;
+    border-radius: 65px;
+}
+
+.donut-label {
+    line-height: 130px;
+    text-align: center;
+    font-size: 20px;
+}
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h3>Skill Test</h3>
+
+        <div class="container1">
+            <img src="html_icon.png" id="htmlimg">
+            <a class="text"><strong> Markup Language</strong></a>
+            <button class="button">Update</button>
+            <br><a class="text">Questions: O8 | Duration: 15 mins | Submittedon 5 June 2021</a>
+            
+        </div>
+
+        <div class="container2">
+            <h4 style>Quick Statistics</h4>
+            <a class="text"><strong>12,890</strong><br>YOUR RANK</a>
+            <a class="text"><strong>37%</strong><br>PERCENTILE</a>
+            <a class="text"><strong>07/15</strong><br>CORRECT ANSWERS</a>
+        </div>
+
+        <div class="container3">
+
+            <div class="container3-1">
+                <h4>Syllabus wise Analysis</h4>
+            </div>
+
+            <div class="container3-2">
+                <h4>Question Analysis</h4>
+                <h4 id="score">07/15</h4>
+                <p>You scored 7 questions correct out of 15.However it still needs some improvements</p>
+                <div class="donut-container" style="background: #9C0;">
+                    <div class="donut-inner">
+                        <div class="donut-label">SCORE</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
